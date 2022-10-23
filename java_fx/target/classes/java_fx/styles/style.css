@@ -1,0 +1,53 @@
+.button
+{
+-fx-background-color : #0000ff;
+}
+.button:hover
+{
+-fx-background-color : #0000ff ;
+}
+.button:pressed
+{
+-fx-background-color :  #0000ff ;
+}
+
+
+/* TableView */
+.label{
+    -fx-text-fill : #0000FF ;
+ }
+ 
+
+ .table-view .column-header,
+.table-view .column-header-background .filler {
+   -fx-cell-size : 20;
+   -fx-background-color:    #0000ff;
+}
+.table-view .column-header .label{
+ 
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+  -fx-cell-size: 30;
+ -fx-alignment: center-left;
+ -fx-text-fill: #000000;
+ -fx-alignment: CENTER_LEFT;
+}
+ 
+.table-row-cell:selected {
+   -fx-background-color:   #0000FF;
+}
+.table-row-cell:selected .text {
+       -fx-fill : white ;
+}
+
+/* scroll bar starts here */
+ 
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+  
+ }

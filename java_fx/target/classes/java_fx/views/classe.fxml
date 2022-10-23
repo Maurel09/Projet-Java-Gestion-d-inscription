@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java_fx.controllers.ClasseController">
+   <children>
+      <AnchorPane prefHeight="68.0" prefWidth="669.0" style="-fx-background-color: #0000ff;">
+         <children>
+            <TextField fx:id="txtNiveau" layoutX="63.0" layoutY="18.0" promptText="Niveau">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtFilière" layoutX="335.0" layoutY="18.0" promptText="Filière">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Button layoutX="583.0" layoutY="29.0" mnemonicParsing="false" onAction="#buttonCreerClasse" style="-fx-background-radius: 10; -fx-background-color: white;" text="Enregistrer" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblvClasse" layoutY="73.0" prefHeight="503.0" prefWidth="669.0" style="-fx-background-radius: 10;" stylesheets="@../styles/style.css">
+        <columns>
+          <TableColumn fx:id="tblcId" prefWidth="326.0" text="ID" />
+            <TableColumn fx:id="tblcLibellé" prefWidth="342.0" text="Libellé" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

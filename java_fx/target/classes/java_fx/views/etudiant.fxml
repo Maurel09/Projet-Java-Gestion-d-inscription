@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java_fx.controllers.EtudiantController">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="6.0" prefHeight="209.0" prefWidth="768.0" style="-fx-background-color: white; -fx-border-color: #0000ff; -fx-border-radius: 10; -fx-border-width: 5;">
+         <children>
+            <Text fill="BLUE" layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inscription">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNomComplet" layoutX="27.0" layoutY="58.0" prefHeight="35.0" prefWidth="334.0" promptText="Nom Complet" style="-fx-border-color: #0000FF; -fx-border-radius: 5; -fx-border-width: 2;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDateInscription" layoutX="27.0" layoutY="111.0" prefHeight="35.0" prefWidth="334.0" promptText="Date d'inscription" style="-fx-border-color: #0000FF; -fx-border-radius: 5; -fx-border-width: 2;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtTuteur" layoutX="409.0" layoutY="58.0" prefHeight="35.0" prefWidth="334.0" promptText="Tuteur" style="-fx-border-color: #0000FF; -fx-border-radius: 5; -fx-border-width: 2;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtClasse" layoutX="409.0" layoutY="111.0" prefHeight="35.0" prefWidth="334.0" promptText="Saisir votre Classe ?" style="-fx-border-color: #0000FF; -fx-border-radius: 5; -fx-border-width: 2;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button layoutX="309.0" layoutY="162.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" style="-fx-border-radius: 5; -fx-background-color: white; -fx-border-color: #0000ff; -fx-border-width: 2;" text="S'inscrire" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="392.0" layoutY="227.0" prefHeight="359.0" prefWidth="381.0" style="-fx-background-color: white; -fx-border-color: #0000ff; -fx-border-radius: 10; -fx-border-width: 5;">
+         <children>
+            <Text fill="BLUE" layoutX="15.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtrer Etudiants de la Classe choisit">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Text>
+            <Button layoutX="293.0" layoutY="45.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="79.0" style="-fx-border-radius: 5; -fx-background-color: white; -fx-border-color: #0000ff; -fx-border-width: 2;" text="Filtrer" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tblvFiltrer" layoutX="9.0" layoutY="83.0" prefHeight="268.0" prefWidth="364.0" stylesheets="@../styles/style.css">
+               <columns>
+                  <TableColumn fx:id="tblcNomComplet" prefWidth="133.0" text="NomComplet" />
+                  <TableColumn fx:id="tblcClasseFiltrer" prefWidth="93.0" text="Classe" />
+                  <TableColumn fx:id="tblcTuteur" prefWidth="137.0" text="Tuteur" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtID" layoutX="148.0" layoutY="42.0" prefHeight="35.0" prefWidth="123.0" promptText="Saisir l'id classe" style="-fx-border-color: #0000FF; -fx-border-radius: 5; -fx-border-width: 2;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="15.0" layoutY="42.0" prefHeight="35.0" prefWidth="117.0" promptText="Saisir l'année" style="-fx-border-color: #0000FF; -fx-border-radius: 5; -fx-border-width: 2;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children></AnchorPane>
+      <AnchorPane layoutX="4.0" layoutY="227.0" prefHeight="359.0" prefWidth="381.0" style="-fx-background-color: white; -fx-border-color: #0000ff; -fx-border-radius: 10; -fx-border-width: 5;">
+         <children>
+            <Text fill="BLUE" layoutX="20.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lister Etudiants inscrit par Année">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtAnnée" layoutX="21.0" layoutY="42.0" prefHeight="35.0" prefWidth="221.0" promptText="Saisir l'année" style="-fx-border-color: #0000FF; -fx-border-radius: 5; -fx-border-width: 2;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button layoutX="286.0" layoutY="45.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="86.0" style="-fx-border-radius: 5; -fx-background-color: white; -fx-border-color: #0000ff; -fx-border-width: 2;" text="Rechercher" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tblvLister" layoutX="9.0" layoutY="86.0" prefHeight="262.0" prefWidth="364.0" stylesheets="@../styles/style.css">
+              <columns>
+                <TableColumn fx:id="tblcId" prefWidth="60.0" text="id" />
+                <TableColumn fx:id="tblcDate" prefWidth="81.0" text="date" />
+                  <TableColumn fx:id="tblcNomEtudiant" prefWidth="131.0" text="Nom Etudiant" />
+                  <TableColumn fx:id="tblcClasse" prefWidth="91.0" text="Classe" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

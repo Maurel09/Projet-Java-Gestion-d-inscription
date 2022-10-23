@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="java_fx.controllers.ConnexionController">
+   
+   <children>
+      <Text fill="BLUE" layoutX="267.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Page de connexion">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtLogin" layoutX="329.0" layoutY="206.0" prefHeight="25.0" prefWidth="326.0" promptText="E-mail">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <AnchorPane prefHeight="564.0" prefWidth="253.0" style="-fx-background-color: #0000ff;">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="80.0" layoutY="267.0" size="100">
+               <font>
+                  <Font size="1.0" />
+               </font></FontAwesomeIconView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion d'inscription" wrappingWidth="227.0546875">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="528.0" layoutY="373.0" mnemonicParsing="false" onAction="#buttonConnexion" style="-fx-background-color: #0000ff; -fx-background-radius: 10;" text="Connexion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="459.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="lblerror" fill="BLUE" layoutX="296.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="login ou password inccorect">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fill="BLUE" glyphName="ENVELOPE" layoutX="280.0" layoutY="242.0" size="40" />
+      <FontAwesomeIconView fill="BLUE" glyphName="KEY" layoutX="280.0" layoutY="325.0" size="40" />
+      <PasswordField fx:id="txtPassword" layoutX="329.0" layoutY="291.0" prefHeight="40.0" prefWidth="326.0" promptText="Mot de passe" style="-fx-background-color: white;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="329.0" layoutY="373.0" mnemonicParsing="false" style="-fx-background-color: #0000ff; -fx-background-radius: 10;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
